@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Find easily a doctor and book online an appointment">
+	<meta name="author" content="Ansonika">
+	<title>KARUM</title>
+
+	<!-- Favicons-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+    
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+	<link href="css/icon_fonts/css/all_icons_min.css" rel="stylesheet">
+    
+	<!-- YOUR CUSTOM CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="layer"></div>
+	<!-- Mobile menu overlay mask -->
+
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div>
+	<!-- End Preload -->
+    
+	<header class="header_sticky">
+		<a href="#menu" class="btn_mobile">
+		  <div class="hamburger hamburger--spin" id="hamburger">
+			<div class="hamburger-box">
+			  <div class="hamburger-inner"></div>
+			</div>
+		  </div>
+		</a>
+		<!-- /btn_mobile-->
+		<div class="container">
+		  <div class="row">
+			<div class="col-lg-3 col-6">
+			  <div id="logo_home">
+				<h1><a href="index.html" title="Karum">KARUM</a></h1>
+			  </div>
+			</div>
+			<div class="col-lg-9 col-6">
+			  <ul id="top_access">
+				<li>
+				  <a href="login.html"><i class="pe-7s-user"></i></a>
+				</li>
+				<li>
+				  <a href="register.html"
+					><i class="pe-7s-add-user"></i
+				  ></a>
+				</li>
+			  </ul>
+			  <nav id="menu" class="main-menu">
+				<ul>
+				  <li>
+					<span><a href="index.html">Ana Sayfa</a></span>
+				  </li>
+				  <li>
+					<span><a href="blog-1.html">Etkinlikler</a></span>
+				  </li>
+				  <li>
+					<span><a href="about.html">Hakkımızda</a></span>
+				  </li>
+				</ul>
+			  </nav>
+			  <!-- /main-menu -->
+			</div>
+		  </div>
+		</div>
+		<!-- /container -->
+	  </header>
+	<!-- /Header -->	
+	
+	<main>
+		<div id="breadcrumb">
+			<div class="container">
+				<ul>
+					<li><a href="#">Ana Sayfa</a></li>
+					<li><a href="#">Etkinlikler</a></li>
+					<li>Ödeme Sayfası</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /breadcrumb -->
+
+		<div class="container margin_60">
+			<div class="row">
+				<div class="col-xl-8 col-lg-8">
+				<div class="box_general_3 cart">
+					<div class="message">
+						<p>Zaten Kayıtlı Mısın? <a href="login.html">Giriş yapmak için tıklayınız</a></p>
+					</div>
+					<div class="form_title">
+						<h3><strong>1</strong>Kişisel Bilgileriniz</h3>
+						<p>
+							Etkinliğe giriş için bilgileri eksiksiz doldurmalısınız.
+						</p>
+					</div>
+					<div class="step">
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<label>İsminiz</label>
+									<input type="text" class="form-control" id="firstname_booking" name="firstname_booking" placeholder="İsminizi giriniz">
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<label>Soyisminiz</label>
+									<input type="text" class="form-control" id="lastname_booking" name="lastname_booking" placeholder="Soyisminizi giriniz">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<label>E-mail</label>
+									<input type="email" id="email_booking" name="email_booking" class="form-control" placeholder="E-mail adresinizi giriniz">
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<label>E-mail doğrulama</label>
+									<input type="email" id="email_booking_2" name="email_booking_2" class="form-control" placeholder="E-mail adresinizi tekrar giriniz">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<label>Telefon Numaranız</label>
+									<input type="text" id="telephone_booking" name="telephone_booking" class="form-control" placeholder="+90 532 000 00 00">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 col-sm-12">
+								<div class="form-group">
+									<label>Etkinlik Sunucuları İçin Kendinizi Tanıtınız</label>
+									<textarea class="form-control" style="height: 180px;" placeholder="Etkinliğe neden katıldığınıza dair kendinizi tanıtınız..."></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<!--End step -->
+
+					<div class="form_title">
+						<h3><strong>2</strong>Ödeme Bilgileri</h3>
+						<br>
+						<p>
+							<strong>Firmamız ödeme bilgilerinizi sizden asla istemez. Ödeme bilgilerinizi kimseyle paylaşmayınız!</strong>
+						</p>
+						<p>
+							Etkinliğe kayıt için ödeme bilgilerinizi doğru girdiğinizden emin olunuz.
+						</p>
+						
+					</div>
+					<div class="step">
+						<div class="form-group">
+							<label>Kartınızın Üzerindeki İsim</label>
+							<input type="text" class="form-control" id="name_card_booking" name="name_card_booking" placeholder="Kart üzerindeki isim">
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Kart Numaranız</label>
+									<input type="text" id="card_number" name="card_number" class="form-control" placeholder="xxxx - xxxx - xxxx - xxxx">
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<img src="img/payments.png" alt="Cards" class="cards">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<label>Son Kullanım Tarihi</label>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<input type="text" id="expire_month" name="expire_month" class="form-control" placeholder="Ay">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<input type="text" id="expire_year" name="expire_year" class="form-control" placeholder="Yıl">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Güvenlik Kodu</label>
+									<div class="row">
+										<div class="col-md-4">
+											<div class="form-group">
+												<input type="text" id="ccv" name="ccv" class="form-control" placeholder="CCV">
+											</div>
+										</div>
+										<div class="col-md-8">
+											<img src="img/icon_ccv.gif" width="50" height="29" alt="ccv"><small>Last 3 digits</small>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--End row -->
+					</div>
+					<hr>
+					<!--End step -->
+
+					<div class="form_title">
+						<h3><strong>3</strong>Fatura Adresi</h3>
+						<br>
+						<p>
+							<strong>Bilgilerinizi doğru girdiğinizden emin olunuz!</strong>
+						</p>
+					</div>
+					<div class="step">
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<label>Ülkeniz</label>
+								<div class="form-group">
+									<select class="form-control" name="country" id="country">
+										<option value="">Ülkenizi Seçiniz</option>
+										<option value="Türkiye">Türkiye</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<label>Adres Bilgileriniz 1</label>
+									<input type="text" id="street_1" name="street_1" class="form-control" placeholder="Adres Bilgileriniz 1">
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class="form-group">
+									<label>Adres Bilgileriniz 2</label>
+									<input type="text" id="street_2" name="street_2" class="form-control" placeholder="Adres Bilgileriniz 2">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label>Şehir</label>
+									<input type="text" id="city_booking" name="city_booking" class="form-control" placeholder="İstanbul">
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="form-group">
+									<label>İlçe</label>
+									<input type="text" id="state_booking" name="state_booking" class="form-control" placeholder="Bebek">
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="form-group">
+									<label>Posta Kodu</label>
+									<input type="text" id="postal_code" name="postal_code" class="form-control" placeholder="35000">
+								</div>
+							</div>
+						</div>
+						<!--End row -->
+					</div>
+					<hr>
+					<!--End step -->
+					<div id="policy">
+						<h4>İptal Politikası</h4>
+						<div class="form-group">
+							<div class="checkboxes">
+								<label class="container_check"><a href="#0">Hüküm koşullarını ve genel politikayı</a> kabul ediyorum.
+									<input type="checkbox">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				<!-- /col -->
+				<aside class="col-xl-4 col-lg-4" id="sidebar">
+					<div class="box_general_3 booking">
+						<form>
+							<div class="title">
+								<h3>Etkinlik Rezervasyonunuz</h3>
+							</div>
+							<div class="summary">
+								<ul>
+									<li>Tarih: <strong class="float-right">24.03.2022</strong></li>
+									<li>Saat: <strong class="float-right">21:00</strong></li>
+									<li>Etkinlik: <strong class="float-right">Karum Projesi'nin Tamamlanma Etkinliği</strong></li>
+								</ul>
+							</div>
+							<ul class="treatments checkout clearfix">
+								<li>
+									Etkinlik Katılım Ücreti: <strong class="float-right">100TL</strong>
+								</li>
+								<li class="total">
+									Toplam: <strong class="float-right">100TL</strong>
+								</li>
+							</ul>
+							<hr>
+							<a href="confirm.html" class="btn_1 full-width">Onayla ve Öde</a>
+						</form>
+					</div>
+					<!-- /box_general -->
+				</aside>
+				<!-- /asdide -->
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</main>
+	<!-- /main -->
+	
+	<footer>
+        <div class="container margin_60_35">
+          <div class="row">
+            <div class="col-lg-3 col-md-12">
+              <p>
+                <a href="index.html" title="Findoctor">
+                  <img
+                    src="img/logo.png"
+                    alt=""
+                    width="163"
+                    height="36"
+                    class="img-fluid"
+                  />
+                </a>
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <h5>Hakkımızda</h5>
+              <ul class="links">
+				<li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="about.html">Biz kimiz?</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <h5>Yararlı Linkler</h5>
+              <ul class="links">
+                <li><a href="blog-1.html">Etkinlikler</a></li>
+				<li><a href="login.html">Giriş Ekranı</a></li>
+                <li><a href="register.html">Kayıt Ekranı</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <h5>İletişim Bilgileri</h5>
+              <ul class="contacts">
+                <li>
+                  <a href="tel://61280932400"
+                    ><i class="icon_mobile"></i> +90 532 000 00 00</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:info@findoctor.com"
+                    ><i class="icon_mail_alt"></i> info@dimnida.net</a
+                  >
+                </li>
+              </ul>
+              <div class="follow_us">
+                <h5>Bizi Takip Et</h5>
+                <ul>
+                  <li>
+                    <a href="#0"><i class="social_facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#0"><i class="social_twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#0"><i class="social_linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#0"><i class="social_instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--/row-->
+          <hr />
+          <div class="row">
+            <div class="col-md-8">
+              <ul id="additional_links">
+                <li><a href="#0">Terms and conditions</a></li>
+                <li><a href="#0">Privacy</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <div id="copy">© 2022 Karum</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+	<!--/footer-->
+
+	<div id="toTop"></div>
+	<!-- Back to top button -->
+
+	<!-- COMMON SCRIPTS -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/common_scripts.min.js"></script>
+	<script src="js/functions.js"></script>
+     
+</body>
+</html>

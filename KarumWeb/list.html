@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Find easily a doctor and book online an appointment">
+	<meta name="author" content="Ansonika">
+	<title>KARUM</title>
+
+	<!-- Favicons-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+	<!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+	<link href="css/vendors.css" rel="stylesheet">
+	<link href="css/icon_fonts/css/all_icons_min.css" rel="stylesheet">
+   
+    <!-- SPECIFIC CSS -->
+    <link href="css/date_picker.css" rel="stylesheet">
+    
+	<!-- YOUR CUSTOM CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+
+</head>
+
+<body>
+	
+	<div id="preloader" class="Fixed">
+		<div data-loader="circle-side"></div>
+	</div>
+	<!-- /Preload-->
+	
+	<div id="page">		
+		<header class="static">
+			<a href="#menu" class="btn_mobile">
+			  <div class="hamburger hamburger--spin" id="hamburger">
+				<div class="hamburger-box">
+				  <div class="hamburger-inner"></div>
+				</div>
+			  </div>
+			</a>
+			<!-- /btn_mobile-->
+			<div class="container">
+			  <div class="row">
+				<div class="col-lg-3 col-6">
+				  <div id="logo_home">
+					<h1><a href="index.html" title="Karum">KARUM</a></h1>
+				  </div>
+				</div>
+				<div class="col-lg-9 col-6">
+				  <ul id="top_access">
+					<li>
+					  <a href="login.html"><i class="pe-7s-user"></i></a>
+					</li>
+					<li>
+					  <a href="register.html"
+						><i class="pe-7s-add-user"></i
+					  ></a>
+					</li>
+				  </ul>
+				  <nav id="menu" class="main-menu">
+					<ul>
+					  <li>
+						<span><a href="index.html">Ana Sayfa</a></span>
+					  </li>
+					  <li>
+						<span><a href="blog-1.html">Etkinlikler</a></span>
+					  </li>
+					  <li>
+						<span><a href="about.html">Hakkımızda</a></span>
+					  </li>
+					</ul>
+				  </nav>
+				  <!-- /main-menu -->
+				</div>
+			  </div>
+			</div>
+			<!-- /container -->
+		  </header>
+	<!-- /header -->
+	
+	<main class="theia-exception">
+		<div id="results">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h4>Görüştüğünüz 140 kişi içerisinden<strong> 2 kişi gösteriliyor</strong></h4>
+					</div>
+					<div class="col-md-6">
+						<div class="search_bar_list">
+							<input type="text" class="form-control" placeholder="İsim, Etkinlikler..">
+							<input type="submit" value="Ara">
+						</div>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /results -->
+
+		<div class="filters_listing">
+			<div class="container">
+				<ul class="clearfix">
+					<li>
+						<h6>Görüşülmüş Kişiler</h6>
+						<div class="switch-field">
+							<input type="radio" id="all" name="type_patient" value="all" checked>
+							<label for="all">Hepsi</label>
+							<input type="radio" id="doctors" name="type_patient" value="doctors">
+							<label for="doctors">Önerilmemiş</label>
+							<input type="radio" id="clinics" name="type_patient" value="clinics">
+							<label for="clinics">Favoriler</label>
+						</div>
+					</li>
+					
+					<li>
+						<h6>Sıralama</h6>
+						<select name="orderby" class="selectbox">
+						<option value="Best rated">En Yüksek Puan</option>
+						<option value="Erkek">Erkek</option>
+						<option value="Kadın">Kadın</option>
+						</select>
+					</li>
+				</ul>
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /filters -->
+		
+		<div class="container margin_60_35">
+			<div class="row">
+				<div class="col-lg-12">
+
+					<div class="strip_list wow fadeIn">
+						<a href="#0" class="wish_bt"></a>
+						<figure>
+							<a href="detail-page.html"><img src="http://via.placeholder.com/565x565.jpg" alt=""></a>
+						</figure>
+						<small>Yazılımcı</small>
+						<h3>Kaan KIVIRCIK</h3>
+						<p><strong>Bulunmuş olduğu etkinlik: </strong> Genç Yazılımcılar</p>
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque corporis suscipit, reiciendis vel repellendus iusto. Fugit officiis tenetur laboriosam repudiandae.</p>
+						<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
+						<ul>
+							<li><a href="#">Kişinin İletişim Bilgileri</a></li>
+						</ul>
+					</div>
+					<!-- /strip_list -->
+
+					<div class="strip_list wow fadeIn">
+						<a href="#0" class="wish_bt"></a>
+						<figure>
+							<a href="detail-page.html"><img src="http://via.placeholder.com/565x565.jpg" alt=""></a>
+						</figure>
+						<small>Yazılımcı</small>
+						<h3>Berkay İNAN</h3>
+						<p><strong>Bulunmuş olduğu etkinlik: </strong> Genç Yazılımcılar</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, eveniet!</p>
+						<span class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></span>
+						<ul>
+							<li><a href="#">Kişinin İletişim Bilgileri</a></li>
+						</ul>
+					</div>
+					<!-- /strip_list -->
+
+					
+					<nav aria-label="" class="add_top_20">
+						<ul class="pagination pagination-sm">
+							<li class="page-item disabled">
+								<a class="page-link" href="#" tabindex="-1">Geri</a>
+							</li>
+							<li class="page-item active"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">3</a></li>
+							<li class="page-item">
+								<a class="page-link" href="#">İleri</a>
+							</li>
+						</ul>
+					</nav>
+					<!-- /pagination -->
+				</div>
+				<!-- /col -->
+				
+				
+				<!-- /aside -->
+				
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</main>
+	<!-- /main -->
+	
+	<footer>
+        <div class="container margin_60_35">
+          <div class="row">
+            <div class="col-lg-3 col-md-12">
+              <p>
+                <a href="index.html" title="Findoctor">
+                  <img
+                    src="img/logo.png"
+                    alt=""
+                    width="163"
+                    height="36"
+                    class="img-fluid"
+                  />
+                </a>
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <h5>Hakkımızda</h5>
+              <ul class="links">
+				<li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="about.html">Biz kimiz?</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <h5>Yararlı Linkler</h5>
+              <ul class="links">
+                <li><a href="blog-1.html">Etkinlikler</a></li>
+				<li><a href="login.html">Giriş Ekranı</a></li>
+                <li><a href="register.html">Kayıt Ekranı</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-4">
+              <h5>İletişim Bilgileri</h5>
+              <ul class="contacts">
+                <li>
+                  <a href="tel://61280932400"
+                    ><i class="icon_mobile"></i> +90 532 000 00 00</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:info@findoctor.com"
+                    ><i class="icon_mail_alt"></i> info@dimnida.net</a
+                  >
+                </li>
+              </ul>
+              <div class="follow_us">
+                <h5>Bizi Takip Et</h5>
+                <ul>
+                  <li>
+                    <a href="#0"><i class="social_facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#0"><i class="social_twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#0"><i class="social_linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#0"><i class="social_instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--/row-->
+          <hr />
+          <div class="row">
+            <div class="col-md-8">
+              <ul id="additional_links">
+                <li><a href="#0">Terms and conditions</a></li>
+                <li><a href="#0">Privacy</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <div id="copy">© 2022 Karum</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+	<!--/footer-->
+	</div>
+	<!-- page -->
+
+	<div id="toTop"></div>
+	<!-- Back to top button -->
+
+	<!-- COMMON SCRIPTS -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/common_scripts.min.js"></script>
+	<script src="js/functions.js"></script>
+	
+	<!-- SPECIFIC SCRIPTS -->
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/markerclusterer.js"></script>
+    <script src="js/map_listing.js"></script>
+    <script src="js/infobox.js"></script>
+
+</body>
+</html>
